@@ -1,0 +1,135 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(120deg, #e2c35d, #d88771) !important;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.todo-header {
+  margin: 5% 0 3% 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.todo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-field {
+  display: flex;
+  background-color: #fff;
+  width: 390px;
+  margin-right: 20px;
+}
+#todoInput {
+  width: 380px;
+  outline: none;
+  border: 0;
+  padding: 12px;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+#addTodo {
+  color: #d88771;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#addTodo:hover {
+  background-color: #d88771;
+  color: #fff;
+}
+select {
+  width: 10rem;
+  color: #d88771;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 1rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+.select-option {
+  position: relative;
+  overflow: hidden;
+}
+/* #selectOption{
+    position: relative;
+    overflow: hidden;
+} */
+.select-option::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #d88771;
+  color: #fff;
+  padding: 1rem;
+  pointer-events: none;
+}
+.todo-list {
+  background-color: #fff;
+  margin: 50px auto;
+}
+#todoList {
+  list-style: none;
+  margin: 40px;
+}
+.todo {
+  width: 30%;
+  display: flex;
+  margin: 10px auto;
+  background-color: #fff;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+.todo li {
+  flex: 1;
+  color: #2e2e2e;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  transition: 0.5s ease-in;
+}
+.completed,
+.trash {
+  padding: 1rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+.completed {
+  background-color: rgb(63, 179, 63);
+}
+.trash {
+  background-color: #d88771;
+}
+.completedText {
+  text-decoration-line: line-through;
+  text-decoration-color: #d88771;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  transition: 0.5s ease-in-out;
+}
