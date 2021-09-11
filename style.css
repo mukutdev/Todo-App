@@ -90,11 +90,13 @@ select {
 #todoList {
   list-style: none;
   margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .todo {
   width: 30%;
   display: flex;
-  margin: 10px auto;
+  margin: 10px 30px;
   background-color: #fff;
   align-items: center;
   transition: 0.5s ease-in;
