@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-do app</title>
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css "
-    />
-    <!-- My stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="todo-header">
-      <h2>My Todo List</h2>
-    </header>
 
-    <div class="todo-conatiner">
-      <div class="todo-wrap">
-        <div class="todo-field">
-          <input type="text" placeholder="Whats on your mind?" id="todoInput" />
-          <button title="add to todo list" onclick="addTodo()" id="addTodo">
-            <i class="fas fa-plus-square"></i>
-          </button>
-        </div>
-        <div class="select-option">
-          <select name="" onchange="filterOption(event)" id="selectOption">
-            <option value="all">All</option>
-            <option value="completed">Completed</option>
-            <option value="incomplete">Incomplete</option>
-          </select>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-do app</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css " />
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="todo-header">
+    <h2>My Todo List</h2>
+  </header>
+
+  <div class="todo-conatiner">
+    <div class="todo-wrap">
+      <div class="todo-field">
+        <input type="text" placeholder="Whats on your mind?" id="todoInput" />
+        <button title="add to todo list" onclick="addTodo()" id="addTodo">
+          <i class="fas fa-plus-square"></i>
+        </button>
       </div>
-
-      <ul id="todoList"></ul>
+      <div class="select-option">
+        <select name="" onchange="filterOption(event)" id="selectOption">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
     </div>
 
-    <!-- My js file -->
-    <script src="./app.js"></script>
-  </body>
+    <ul id="todoList"></ul>
+  </div>
+
+  <!-- My js file -->
+  <script src="./app.js"></script>
+</body>
+
 </html>

@@ -7,7 +7,7 @@ const todoContainer = document.getElementById("todoList");
 
 // add todo event listener
 const addTodo = () => {
-  if (todoInput.value === "") {
+  if (!todoInput.value.trim()) {
     alert("Please tell us whats on your mind");
   } else {
     const todoDiv = document.createElement("div");
@@ -17,6 +17,8 @@ const addTodo = () => {
         <button title="mark as delete" onclick ="deleteOrCheckItem(event)" class="trash"><i class="fas fa-trash-alt"></i></button>`;
     todoContainer.appendChild(todoDiv);
     todoInput.value = "";
+
+
   }
 };
 

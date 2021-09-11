@@ -72,10 +72,7 @@ select {
   position: relative;
   overflow: hidden;
 }
-/* #selectOption{
-    position: relative;
-    overflow: hidden;
-} */
+
 .select-option::after {
   content: "\25BC";
   position: absolute;
