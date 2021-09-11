@@ -5,6 +5,20 @@ const addBtn = document.getElementById("addTodo");
 const todoText = document.getElementById("todo-text");
 const todoContainer = document.getElementById("todoList");
 
+
+
+// enter key event handlers
+todoInput.addEventListener('keyup', (event) =>
+{
+  if (event.keyCode === 13)
+  {
+    event.preventDefault();
+    addBtn.click();
+   
+  } 
+})
+
+
 // add todo event listener
 const addTodo = () => {
   if (!todoInput.value.trim()) {
